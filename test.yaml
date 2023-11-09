@@ -102,6 +102,7 @@ paths:
           schema:
             type: number 
           required: false 
+          description: Number of items per page
 
         - in: query
           name: sortBy 
@@ -357,6 +358,8 @@ paths:
                properties:
                 email: 
                  type: string
+                 description: the email of the user
+                 format: email
                 password: 
                  type: string
        
